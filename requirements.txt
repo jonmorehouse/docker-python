@@ -1,0 +1,5 @@
+Cython==0.19.2
+Pillow==2.1.0
+boto==2.16.0
+-e git://github.com/surfly/gevent.git@c2ff5f0cd43b85ddf3a11e334d3ef768bada3c0c#egg=gevent-master
+gipc==0.3.2
