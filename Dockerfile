@@ -7,10 +7,7 @@ RUN apt-get install -y python \
 	locales
 
 RUN pip install --upgrade setuptools 
-RUN pip install cython
 
-## bootstrap python modules
-#ADD requirements.txt requirements.txt
-#RUN pip install -r requirements.txt
-
-
+# bootstrap python modules
+ADD requirements.txt requirements.txt
+RUN pip install -r requirements.txt
