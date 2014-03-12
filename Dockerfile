@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
 RUN apt-get update 
-RUN apt-get upgrade -y
-RUN apt-get install -y python python-pip git gcc make python-dev 
+#RUN apt-get upgrade -y
+RUN apt-get install -y python python-pip git gcc make python-dev cgroup-lite
 RUN pip install --upgrade setuptools 
 
 # bootstrap python modules
