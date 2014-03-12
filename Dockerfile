@@ -1,4 +1,4 @@
-FROM morehousej09/ubuntu
+FROM jonmorehouse/ubuntu
 
 RUN apt-get install -y python \
 	python-pip \
