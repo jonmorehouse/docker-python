@@ -1,11 +1,14 @@
-FROM ubuntu:latest
+FROM morehousej09/ubuntu
 
-RUN apt-get update 
-#RUN apt-get upgrade -y
-RUN apt-get install -y python python-pip git gcc make python-dev cgroup-lite
+RUN apt-get install -y python \
+	python-pip \
+	python-dev \
+	libxml2-dev \
+	locales
+
 RUN pip install --upgrade setuptools 
 
-# bootstrap python modules
+## bootstrap python modules
 ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
